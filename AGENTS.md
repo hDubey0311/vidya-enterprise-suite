@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application structure
+
+- Keep Vidya's shared shell and reusable commerce surfaces in `src/components/vidya-app.tsx`; keep account entry in its own public route, since roles share navigation while sign-in stays independently reachable.
